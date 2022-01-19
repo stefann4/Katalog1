@@ -1,0 +1,846 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+.header-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    /*background-color: #252525; - ako korisnik ne zeli background sliku, probaj ovu boju i probaj u .header-navbar border-bottom white */
+    color: white;
+    background-image: url('proba1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-navbar {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    padding: 35px 0;
+    border-bottom: 1px solid white;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.navbar-contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.navbar-options li {
+    margin-right: 10px;
+}
+
+.header-container .header-navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-mid {
+    text-align: center;
+    height: 30vh;
+    margin: 25vh auto;
+}
+
+.header-mid h1 {
+    font-size: 3.5rem;
+}
+
+.header-mid h4 {
+    font-weight: 50;
+    font-size: 1rem;
+}
+
+.header-mid button {
+    width: 15%;
+    height: 45px;
+    border: 0;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+}
+
+
+/*Container*/
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.container span {
+    color: rgb(61, 63, 63);
+}
+
+.welcometo {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.welcometo h2 {
+    color: orange;
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.welcometo span {
+    font-size: 1.2rem;
+    margin: 0;
+    color: rgb(61, 63, 63);
+}
+
+.slider {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.column {
+    font-size: 1rem;
+    color: rgb(61, 63, 63);
+    width: 20%;
+}
+
+.column h4 {
+    font-size: 1.2rem;
+}
+
+.slider .column i {
+    width: 100%;
+    font-size: 2.5rem;
+    color: orange;
+}
+
+.column span {
+    color: rgb(148, 148, 148);
+}
+
+.picturetitle {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.picturetitle h3 {
+    font-size: 3rem;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.picturetitle span {
+    font-size: 1.2rem;
+}
+
+.undertitle {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.arrowLeft,
+.arrowRight {
+    font-size: 2rem;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: rgb(61, 63, 63);
+}
+
+.arrowLeft {
+    justify-content: flex-start;
+}
+
+.arrowRight {
+    justify-content: flex-end;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-bottom: 250px;
+}
+
+.picture {
+    background-color: rgb(196, 192, 192);
+    color: white;
+    width: 30%;
+    height: 300px;
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.picture:hover {
+    background-color: orange;
+    transition: 1s;
+}
+
+.underpicturetitle {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 70%;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.leftsection {
+    width: 45%;
+}
+
+.leftsection .upleft {
+    width: 100%;
+    height: 45%;
+    margin-bottom: 70px;
+}
+
+.leftsection .upleft .picture {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.downleft {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.downleft .downleftleft {
+    width: 35%;
+    color: rgb(148, 148, 148);
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.downleftleft h3 {
+    color: rgb(61, 63, 63);
+}
+
+.downleft .downleftright {
+    width: 50%;
+}
+
+.downleftright .picture {
+    width: 100%;
+    margin: 0;
+}
+
+.rightsection {
+    margin: 0;
+    margin-left: 5%;
+    width: 45%;
+}
+
+.rightsection .upright {
+    width: 100%;
+    height: 45%;
+    margin-bottom: 70px;
+}
+
+.upright {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 45%;
+}
+
+.uprightleft {
+    width: 45%;
+    height: 50%;
+    margin-right: 5%;
+}
+
+.upright .picture {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.upright .uprightleft .uprightleftText {
+    width: 60%;
+    color: rgb(148, 148, 148);
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.uprightleftText h3 {
+    color: rgb(61, 63, 63);
+}
+
+.uprightright {
+    width: 45%;
+    height: 100%;
+    margin: 0;
+}
+
+.uprightright .picture {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+}
+
+.uprightrightText {
+    height: 45%;
+    width: 60%;
+    color: rgb(148, 148, 148);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uprightrightText h3 {
+    color: rgb(61, 63, 63);
+}
+
+.downright {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.downrightleft {
+    width: 50%;
+}
+
+.downrightleft .picture {
+    width: 100%;
+    margin: 0;
+}
+
+.downrightright {
+    width: 35%;
+    margin: 0px auto;
+    text-align: center;
+    color: rgb(148, 148, 148);
+}
+
+.downrightright h3 {
+    color: rgb(61, 63, 63);
+}
+
+.btnGal {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 150px;
+    border-bottom: 1px solid rgb(61, 63, 63);
+    
+}
+
+.btnGalerija {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #1167b1;
+    color: white;
+    margin-bottom: 150px;
+}
+
+.clients{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.clients .picture{
+    width: 25%;
+    height: 200px;
+    margin: 0;
+    margin-right: 5%;
+}
+
+.clients .clientexpression{
+    width: 70%;
+    margin: 0;
+    color: rgb(61, 63, 63);
+    text-align: left;
+}
+
+.clientexpression .signature{
+    line-height: 0;
+}
+
+.signature h4{
+    color: orange;
+    font-size: 1.2rem;
+}
+.signature p{ 
+    color: rgb(61, 63, 63);
+}
+
+.dots{
+    width: 20%;
+    margin: auto;
+    color: #1167b1;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 200px;
+}
+
+.dots i:nth-child(1),.dots i:nth-child(3){
+    font-size: 1rem !important;
+}
+
+.specialoffer{
+    width: 100%;
+    background-color: orange;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.specialoffer h4{
+    width: 70%;
+    text-align: center;
+}
+.specialoffer input{
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+    background-color: orange;
+    color: white;
+    margin: auto;
+}
+
+footer{
+    width: 70%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin:auto;
+    justify-content: space-evenly;
+    font-size: 0.7rem;
+    color: rgb(148, 148, 148);
+    margin-bottom: 20px;
+    line-height:0.2cm;
+}
+
+.aboutus p:nth-child(1),.address p:nth-child(1),
+.contactus p:nth-child(1),.followus p:nth-child(1){
+ color: rgb(61, 63, 63);
+ font-size: 1rem;
+ font-weight: bold;
+}
+
+.aboutus p:nth-child(1){
+    margin-bottom: 20px;
+}
+.followus i{
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #1167b1;
+}
+
+@media only screen and (max-width: 1367px){
+
+.leftsection,.rightsection{
+    font-size: 0.8rem;
+}
+
+.header-navbar{
+    font-size: 0.8rem;
+}
+.clientexpression span{
+    font-size: 0.8rem;
+}
+
+.signature h4{
+    font-size: 0.9rem;
+}
+.signature{
+    font-size: 0.8rem;
+    color: rgb(148, 148, 148);
+}
+.clients .picture{
+    height: 250px;
+    width: 35%;
+}
+
+}
+
+@media only screen and (max-width:1008px){
+
+    .leftsection,.rightsection{
+        font-size: 0.7rem;
+    }
+    
+    .header-navbar{
+        font-size: 0.7rem;
+    }
+    .clientexpression span{
+        font-size: 0.7rem;
+    }
+    
+    .signature h4{
+        font-size: 0.8rem;
+    }
+    .signature{
+        font-size: 0.7rem;
+        color: rgb(148, 148, 148);
+    }
+    .clients .picture{
+        height: 250px;
+        width: 35%;
+    }
+
+    .underpicturetitle{
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        overflow: hidden;
+        justify-content: none;
+    }
+    .underpicturetitle .picture{
+        height: 100%;
+        width: 50%;
+    }
+    .leftsection{
+        display: flex;
+        flex-direction: row;
+        height: 20vh;
+        width: 100%;
+    }
+    .leftsection .upleft{
+        display: none;
+    }
+    .leftsection .downleft{
+        width: 100%;
+        height: 20vh;
+    }
+    .downleft,.rightsection {
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+    .downleft span,.rightsection span{
+        font-size: 0.9rem;
+    }
+    .downleft .picture{
+        width: 100%;
+    }
+    .rightsection{
+        width: 100%;
+
+    }
+    .rightsection .picture{
+        width: 100%;
+    }
+    .rightsection .upright{
+        height: 40vh;
+        margin-bottom: 0;
+    }
+    .uprightleft{
+        margin: 0;
+    }
+    .uprightright .picture{
+        height: 20vh;
+    }
+    .rightsection .downright{
+        width: 100%;
+        height: 20vh;
+        margin: 0;
+    }
+    .downright .picture{
+        width: 100%;
+    }
+    .downrightleft{
+        width: 45%;
+    }
+    .welcometo span,.picturetitle span{
+        font-size: 1rem;
+    }
+    .welcometo h2,.picturetitle h3 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:880px){
+    .header-navbar{
+        visibility: hidden;
+        display: block;
+        background-color: rgb(64,64,64,0.5);
+        width: 60%;
+        margin: 0;
+        padding: 0;
+        animation-name: show;
+        animation-duration: 1s;
+        height: 100vh;
+        position: fixed;
+    }
+    .navbar-contacts{
+        visibility: hidden;
+    }
+    .header-navbar ul{
+        display: block;
+        width: 100%;
+        color: blue;
+    }
+    .navbar-options li{
+        display: flex;
+        margin: 0;
+        width: 100%;
+        height: 16.55vh;
+        border-bottom: 1px solid white;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    .navbar-options li:hover{
+        background-color: rgb(64,64,64,0.8);
+        transition: 1s;
+    }
+    .navbar-options li a, .navbar-contacts li a{
+        height: auto;
+        margin: auto;
+    }
+    .hamburger{
+        padding: 8px;
+        background-color: rgb(54, 54, 54,0.7);
+        border-radius: 10px;
+        display: block;
+        position: fixed;
+        top: 5%;
+        right: 5%;
+        font-size: 2rem;
+    }
+    .header-mid{
+        margin: 0;
+        position: absolute;
+        top: 20vh;
+        left: 15%;
+        width: 70%;
+    }
+    .header-mid button{
+        display: none;
+    }
+    .undertitle .pictures{
+        margin-bottom: 0;
+        width: 100%;
+     }
+     .pictures .picture{
+         height: 200px;
+     }
+     .clients{
+         width: 80%;
+     }
+     .clients .picture{
+         width: 45%;
+     }
+     .clients .clientexpression{
+         width: 60%;
+     }
+    @keyframes show {
+        from{width: 0%;}
+        to {width: 100%;}
+      }
+}
+
+@media only screen and (max-width:752px){
+
+    .clientexpression{ 
+        font-size: 0.8rem;
+    }
+    .slider{
+        display: block;
+    }
+    .slider .column{
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 60%;
+    }
+    .specialoffer h4{
+        font-size:1.5rem;
+    }
+    .rightsection span, .leftsection span{
+        font-size: 0.7rem;
+     }
+     .rightsection h3, .leftsection h3{
+         font-size: 0.8rem;
+     }
+
+}
+
+@media only screen and (max-width: 630px){
+    .welcometo h2{
+        font-size: 1.5rem;
+    }
+    .welcometo span{
+        font-size: 0.8rem;
+    }
+    .picturetitle h3{
+        font-size: 1.5rem;
+    }
+    .picturetitle span{
+        font-size: 0.8rem;
+    }
+    .pictures .picture{
+        height: 150px;
+    }
+    .picturetitle h3{
+        font-size: 1.8rem;
+    }
+    .clients{
+        display: block;
+        width: 80%;
+    }
+    .clients .clientexpression{
+        width: 100%;
+    }
+    .clients .clientexpression span{
+        font-size: 0.8rem;
+        line-height:1.5;
+    }
+    .clients .picture{
+        margin: auto 0;
+        margin-bottom: 10px;
+        width: 40%;
+        height: 20vh;
+    }
+    .specialoffer h4{
+        font-size: 1.3rem;
+    }
+    .dots{
+        margin-bottom: 100px;
+    }
+    footer{
+        width: 100%;
+    }
+    .pictures .picture{
+        height: 300px;
+        width: 100%;
+    }
+    .arrowLeft{
+        visibility: hidden;
+    }
+    .arrowRight{
+        visibility: hidden;
+    }
+}
+@media only screen and (max-width: 541px){
+    .slider{
+        width: 100%;
+    }
+    .slider .column{
+        width: 70%;
+        padding: 10px;
+        background-color: rgb(226, 222, 222);
+        border-radius: 5px;
+    }
+}
+@media only screen and (max-width: 481px){
+    .rightsection span, .leftsection span{
+        font-size: 0.6rem;
+     }
+     .rightsection h3, .leftsection h3{
+         font-size: 0.6rem;
+     }
+     .specialoffer h4{
+         font-size: 1rem;
+     }
+     .specialoffer .ordernow{
+         width: 20%;
+         height: 30px;
+     }
+     .pictures .picture{
+        height: 250px;
+        width: 100%;
+    }
+    .arrowLeft{
+        visibility: hidden;
+    }
+    .arrowRight{
+        visibility: hidden;
+    }
+}
+@media only screen and (max-width: 381px){
+    .rightsection span, .leftsection span{
+        font-size: 0.5rem;
+    }
+    .pictures .picture{
+        height: 200px;
+        width: 100%;
+    }
+    .arrowLeft{
+        visibility: hidden;
+    }
+    .arrowRight{
+        visibility: hidden;
+    }
+    .specialoffer h4{
+        font-size: 0.8rem;
+    }
+    footer {
+        font-size: 0.5rem;
+    }
+    .specialoffer input{
+        font-size: 0.5rem;
+    }
+}
+
